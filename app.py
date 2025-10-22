@@ -150,7 +150,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Steam Finder is running!"
+    return render_template('index.html')
 
 if __name__ == "__main__":
     from waitress import serve
